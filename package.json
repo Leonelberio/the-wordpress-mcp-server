@@ -18,8 +18,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stefans71/wordpress-mcp-server.git"
+    "url": "https://github.com/Leonelberio/the-wordpress-mcp-server.git"
   },
-  "author": "stefans71",
+  "author": "Leonelberio",
   "description": "MCP server for WordPress integration"
 }
