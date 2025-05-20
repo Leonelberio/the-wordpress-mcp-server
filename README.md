@@ -1,5 +1,7 @@
 # WordPress MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@Leonelberio/the-wordpress-mcp-server)](https://smithery.ai/server/@Leonelberio/the-wordpress-mcp-server)
+
 A Model Context Protocol (MCP) server for WordPress integration, compatible with Windows, macOS, and Linux.
 
 ## Overview
@@ -8,6 +10,15 @@ This MCP server enables interaction with WordPress sites through the WordPress R
 
 ## Installation
 
+### Installing via Smithery
+
+To install WordPress Integration Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Leonelberio/the-wordpress-mcp-server):
+
+```bash
+npx -y @smithery/cli install @Leonelberio/the-wordpress-mcp-server --client claude
+```
+
+### Manual Installation
 1. Clone the repository
 2. Install dependencies:
 ```bash
