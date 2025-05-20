@@ -1,0 +1,29 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['build/index.js'], env: { WORDPRESS_SITE_URL: config.siteUrl, WORDPRESS_USERNAME: config.username, WORDPRESS_PASSWORD: config.password } })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - siteUrl
+      - username
+      - password
+    properties:
+      siteUrl:
+        type: string
+        description: WordPress site URL
+      username:
+        type: string
+        description: WordPress username
+      password:
+        type: string
+        description: WordPress password
+  exampleConfig:
+    siteUrl: https://example.com
+    username: admin
+    password: app-password
